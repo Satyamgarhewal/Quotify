@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Add your Quote
+        </title>
+        <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+            <h2 align="center">Quotify</h2>
+            <div id="posts">
+              <div align="center">
+                 
+          
+                  <a  href="./quotify.html"id="nQuote" >  <b>Random Quote(API)</b>&nbsp;</a>
+                  <b>||</b>
+                  <a href="./RandomQuote(local).html" id="apiShow">&nbsp; <b>Random Quotes(Local)</b> &nbsp;</a>
+                  <b>||</b>
+               
+               
+                <a  href="./ListQuotes.html"id="show" >&nbsp; <b>List All Quotes (local)</b> &nbsp;</a>
+                <!-- <b>||</b> -->
+                <!-- <a  href="E:\JavaScriptCourse\Assignment\Quotify\add.html"id="add" >  <b>Add New Quote</b>&nbsp;</a> -->
+                <!-- <b>||</b> -->
+                <!-- <a  href="E:\JavaScriptCourse\Assignment\Quotify\add.html"id="add" ><b> Add Quote </b>&nbsp;</a> -->
+                </div>
+        <div class="w-50 mx-auto border rounded p-3 mt-3" >
+          <form action="./add.html">
+            <label for="exampleFormControlInput1">Author</label>
+            <input type="text" class="form-control" id="authorName" placeholder="Author name">
+          <!-- </div>
+          <div class="form-group"> -->
+              <br/>
+            <label for="exampleFormControlTextarea1">Quote</label>
+            <textarea class="form-control" id="newQuote" rows="3" placeholder="Write your Quote!!"></textarea>
+            <br/>
+            <button type="button" class="btn btn-primary" id="add">Add</button>
+            <button type="submit" class="btn btn-primary" id="extra">Add new quote</button>
+          </form>
+          </div>
+    </body>
+</html>
+<script src="./js/axios.js"></script>
+<script src="./js/addQuote.js"></script>
